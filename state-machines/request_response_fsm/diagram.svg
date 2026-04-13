@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="900" height="500" viewBox="0 0 900 500" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <style>
+    .state {
+      fill: #2f4a78;
+      stroke: #1c2e4a;
+      stroke-width: 2;
+    }
+
+    .text {
+      fill: #ffffff;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      font-weight: bold;
+      text-anchor: middle;
+      dominant-baseline: middle;
+    }
+
+    .arrow {
+      stroke: #333;
+      stroke-width: 2.5;
+      fill: none;
+      marker-end: url(#arrowhead);
+    }
+
+    .label {
+      fill: #333;
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      text-anchor: middle;
+    }
+  </style>
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 10 4, 0 8" fill="#333"/>
+    </marker>
+    <bx:export>
+      <bx:file format="png"/>
+      <bx:file format="jpeg"/>
+    </bx:export>
+  </defs>
+  <circle class="state" cx="120" cy="250" r="60" style="fill: rgb(40, 94, 187);"/>
+  <text class="text" x="120" y="250" style="white-space: pre;">IDLE</text>
+  <circle class="state" cx="300" cy="150" r="60" style="fill: rgb(40, 94, 187);"/>
+  <text class="text" x="300" y="150" style="white-space: pre;">READY</text>
+  <circle class="state" cx="520" cy="150" r="60" style="fill: rgb(40, 94, 187);"/>
+  <text class="text" x="520" y="150" style="white-space: pre;" transform="matrix(1, 0, 0, 1, -0.835102, -5.963047)">WAITING<tspan x="520" dy="1em">​</tspan>RESPONSE</text>
+  <circle class="state" cx="700" cy="250" r="60" style="fill: rgb(40, 94, 187);"/>
+  <text class="text" x="700" y="250" style="white-space: pre;">RETRY</text>
+  <circle class="state" cx="300" cy="350" r="60" style="fill: rgb(40, 94, 187);"/>
+  <text class="text" x="300" y="350" style="white-space: pre;">FAULT</text>
+  <text class="label" x="154.723" y="131.602" style="white-space: pre; font-size: 13px;">START</text>
+  <path class="arrow" d="M 339.506 102.652 C 385.546 61.391 431.588 61.391 477.628 102.652" style=""/>
+  <text class="label" x="401.752" y="61.462" style="white-space: pre; font-size: 13px;">REQUEST_SENT</text>
+  <path class="arrow" d="M 465.34 180.087 C 429.157 213.304 392.974 213.304 356.791 180.087" style=""/>
+  <text class="label" x="410" y="235" style="white-space: pre;">RESPONSE_RECEIVED</text>
+  <text class="label" x="515.203" y="276.959" style="white-space: pre; font-size: 13px;">TIMEOUT</text>
+  <path class="arrow" d="M 692.622 187.13 C 654.082 113.618 610.723 85.03 562.546 101.365" style=""/>
+  <text class="label" x="723.052" y="123.765" style="white-space: pre; font-size: 13px;">RETRY_ATTEMPT</text>
+  <path class="arrow" d="M 666.624 302.241 C 561.588 353.38 459.835 375.297 361.365 367.992" style=""/>
+  <text class="label" x="538.796" y="381.721" style="white-space: pre; font-size: 13px;">RETRIES_EXHAUSTED</text>
+  <path class="arrow" d="M 236.769 350.266 C 187.237 355.689 155.041 342.133 140.182 309.598" style=""/>
+  <text class="label" x="170.739" y="371.011" style="white-space: pre; font-size: 13px;">RESET</text>
+  <path class="arrow" d="M 507.356 239.749 C 552.471 288.324 597.587 288.324 642.701 239.749" style="stroke-width: 2.5; transform-box: fill-box; transform-origin: 50% 50%;" transform="matrix(0.866025, 0.5, -0.5, 0.866025, 0.000016, 0.000008)"/>
+  <path class="arrow" d="M 238.685 141.7 C 202.502 174.917 166.319 174.917 130.136 141.7" style="stroke-width: 2.5; transform-box: fill-box; transform-origin: 50% 50%;" transform="matrix(-0.866025, 0.5, -0.5, -0.866025, 0.000026, 0.000001)"/>
+</svg>
